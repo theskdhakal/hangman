@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: rgb(144, 151, 50);
+}
+
+.container {
+  font-size: 16px;
+  background-color: rgb(255, 249, 249);
+  width: 90vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 1.2rem 2.4rem rgba(133, 66, 66, 0.801);
+}
+
+#options-container {
+  text-align: center;
+}
+
+#options-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem 0 2.4rem 0;
+}
+
+#options-container button {
+  padding: 0.6rem 1.2rem;
+  border: 3px solid black;
+  background-color: white;
+  color: black;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+#options-container button:disabled {
+  border: 3px solid grey;
+  color: grey;
+  background-color: white;
+}
+
+#options-container button.active {
+  background-color: purple;
+  border: 3px solid black;
+  color: white;
+}
+
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+#letter-container button {
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 0.4rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.new-game-popup {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#user-input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+canvas {
+  display: block;
+  margin: auto;
+  border: 10px solid #8c52ff;
+  border-radius: 10px;
+}
+.hide {
+  display: none;
+}
+#result-text h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+#result-text p {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+}
+#result-text span {
+  font-weight: 600;
+}
+#new-game-button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  background-color: #8c52ff;
+  border: 3px solid #000000;
+  color: #fff;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+.win-msg {
+  color: #39d78d;
+}
+.lose-msg {
+  color: #fe5152;
+}
